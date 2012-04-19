@@ -1,4 +1,0 @@
-abb
-===
-
-Easy get abbreviations

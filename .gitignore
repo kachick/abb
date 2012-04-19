@@ -3,6 +3,7 @@
 .bundle
 .config
 coverage
+coverage.data
 InstalledFiles
 lib/bundler/man
 pkg
@@ -16,3 +17,10 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# tmp-old
+.old
+
+# editor
+*~
+.redcar

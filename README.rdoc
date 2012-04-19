@@ -1,0 +1,52 @@
+= abb
+
+* http://github.com/kachick/abb
+* http://rubygems.org/gems/abb
+* http://rubyforge.org/projects/abb
+
+== Description
+
+Easy get/convert to abbreviations
+
+== Features
+
+Now, this library supports below in ASCII.
+
+* initial word (acronym, initialism)
+* consonant, vowel
+
+== Usage
+
+* setup
+    require 'abb'
+
+* no taint global-name-space when without ext.rb
+    Abb.fold('google') #=> "ggl"
+
+* extend
+    require 'abb/ext'
+
+* overview
+    'google'.abb  #=> "ggl"
+    'Japan'.abb   #=> "Jpn"
+    'American Standard Code for Information Interchange'.abb  #=> "ASCII"
+
+== Requirements
+
+* Ruby 1.9.2 or later
+  
+  Focusing
+  
+  * 1.9.3-p125
+  * 1.9.2-p290
+
+== Installation
+
+* gem install abb
+
+== License
+
+Copyright (c) 2012 Kenichi Kamiya
+
+The MIT X11 License 
+See the file LICENSE for further details.
