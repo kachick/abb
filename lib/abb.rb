@@ -64,7 +64,7 @@ module Abb
 
     Abb.methods(false).each do |convertor|
       define_method convertor do
-        Abb.__send__ convertor, self.to_str
+        Abb.__send__ convertor, to_str
       end
     end
   
