@@ -48,5 +48,6 @@ Now, this library supports below in ASCII.
 
 Copyright (c) 2012 Kenichi Kamiya
 
-The MIT X11 License 
+The MIT X11 License
+
 See the file LICENSE for further details.
