@@ -8,7 +8,13 @@ module Abb
   CONSONANTS  = ([*'b'..'z', *'B'..'Z'] - VOWELS).map(&:freeze).freeze
   
   class << self
-  
+    NOT_VOWELS     = "^#{VOWELS.join}".freeze
+    NOT_CONSONANTS = "^#{CONSONANTS.join}".freeze
+    
+    if respond_to? :private_constant
+      private_constant :NOT_VOWELS, :NOT_CONSONANTS
+    end
+    
     def abbreviations(str)
       case str
       when /\s/
@@ -25,15 +31,15 @@ module Abb
     
     alias_method :abb, :abbreviations
     alias_method :fold, :abbreviations
-    
-    def consonant(str)
-      str.delete("^#{CONSONANTS.join}")
-    end
-    
+
     def vowel(str)
-      str.delete("^#{VOWELS.join}")
+      str.delete NOT_VOWELS
     end
-    
+
+    def consonant(str)
+      str.delete NOT_CONSONANTS
+    end
+
     def initializm(str)
       ''.tap {|ret|
         str.scan(/\b[A-Z]/) do |cap|
