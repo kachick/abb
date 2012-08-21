@@ -5,7 +5,11 @@ Manifest.txt
 Rakefile
 lib/abb.rb
 lib/abb/version.rb
+lib/abb/requirements.rb
+lib/abb/constants.rb
+lib/abb/interface.rb
+lib/abb/singletonclass.rb
 lib/abb/ext.rb
 test/test_helper.rb
 test/test_abb.rb
-example/example.rb
+examples/README.rb
