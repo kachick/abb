@@ -1,12 +1,10 @@
 = abb
 
-* http://github.com/kachick/abb
-* http://rubygems.org/gems/abb
-* http://rubyforge.org/projects/abb
+{<img src="https://secure.travis-ci.org/kachick/abb.png" />}[http://travis-ci.org/kachick/abb]
 
 == Description
 
-Easy get/convert to abbreviations
+get/convert to abbreviations
 
 == Features
 
@@ -34,20 +32,23 @@ Now, this library supports below in ASCII.
 == Requirements
 
 * Ruby 1.9.2 or later
-  
-  Focusing
-  
-  * 1.9.3-p125
-  * 1.9.2-p290
 
 == Installation
 
-* gem install abb
+    gem install abb
+
+== Links
+
+code   :: https://github.com/kachick/abb
+issues :: https://github.com/kachick/abb/issues
+CI     :: http://travis-ci.org/#!/kachick/abb
+gem    :: https://rubygems.org/gems/abb
+gem+   :: http://metagem.info/gems/abb
 
 == License
 
+The MIT X License
+
 Copyright (c) 2012 Kenichi Kamiya
 
-The MIT X11 License
-
-See the file LICENSE for further details.
+See the file LICENSE for details.

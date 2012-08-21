@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    abb (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (0.9.2.2)
+    yard (0.8.2.1)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  abb!
+  rake
+  yard (>= 0.8.2.1)
