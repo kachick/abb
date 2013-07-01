@@ -7,9 +7,7 @@ module Abb
     NOT_VOWELS     = "^#{VOWELS.join}".freeze
     NOT_CONSONANTS = "^#{CONSONANTS.join}".freeze
     
-    if respond_to? :private_constant
-      private_constant :NOT_VOWELS, :NOT_CONSONANTS
-    end
+    private_constant :NOT_VOWELS, :NOT_CONSONANTS
     
     # @param [String, #to_str] str
     # @return [String]

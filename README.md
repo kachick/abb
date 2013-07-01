@@ -33,7 +33,7 @@ require 'abb/core_ext'
 Requirements
 -------------
 
-* Ruby - [1.9.2 or later](http://travis-ci.org/#!/kachick/abb)
+* Ruby - [1.9.3 or later](http://travis-ci.org/#!/kachick/abb)
 
 Build Status
 -------------
