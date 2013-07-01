@@ -1,4 +1,3 @@
-$VERBOSE = true
 require_relative 'test_helper'
 
 class TestAbb < Test::Unit::TestCase
