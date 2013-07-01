@@ -9,7 +9,7 @@ module Abb
     
     private_constant :NOT_VOWELS, :NOT_CONSONANTS
     
-    # @param [String, #to_str] str
+    # @param str [String, #to_str]
     # @return [String]
     def abbreviation(str)
       case (str = str.to_str)
@@ -28,19 +28,19 @@ module Abb
     alias_method :abb, :abbreviation
     alias_method :fold, :abbreviation
 
-    # @param [String, #to_str] str
+    # @param str [String, #to_str]
     # @return [String]
     def vowel(str)
       str.to_str.delete NOT_VOWELS
     end
 
-    # @param [String, #to_str] str
+    # @param str [String, #to_str]
     # @return [String]
     def consonant(str)
       str.to_str.delete NOT_CONSONANTS
     end
 
-    # @param [String, #to_str] str
+    # @param str [String, #to_str]
     # @return [String]
     def initializm(str)
       ''.tap {|ret|
