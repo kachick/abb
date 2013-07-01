@@ -1,6 +1,9 @@
 abb
 ====
 
+[![Build Status](https://secure.travis-ci.org/kachick/abb.png)](http://travis-ci.org/kachick/abb)
+[![Gem Version](https://badge.fury.io/rb/abb.png)](http://badge.fury.io/rb/abb)
+
 Description
 -----------
 
@@ -15,11 +18,15 @@ Features
 Usage
 -----
 
+Basic API
+
 ```ruby
 require 'abb'
 
 Abb.fold('google') #=> "ggl"
 ```
+
+Extended
 
 ```ruby
 require 'abb/core_ext'
@@ -34,11 +41,6 @@ Requirements
 -------------
 
 * Ruby - [1.9.3 or later](http://travis-ci.org/#!/kachick/abb)
-
-Build Status
--------------
-
-[![Build Status](https://secure.travis-ci.org/kachick/abb.png)](http://travis-ci.org/kachick/abb)
 
 Install
 -------
