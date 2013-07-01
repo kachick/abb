@@ -6,7 +6,7 @@ require_relative '../lib/abb'
 
 p Abb.fold('google') #=> "ggl"
 
-require_relative '../lib/abb/ext'
+require_relative '../lib/abb/core_ext'
 
 p 'google'.abb  #=> "ggl"
 p 'Japan'.abb   #=> "Jpn"

@@ -1,7 +1,5 @@
 # coding: us-ascii
 
-require_relative 'constants'
-
 module Abb
 
   class << self

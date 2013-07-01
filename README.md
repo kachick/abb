@@ -22,7 +22,7 @@ Abb.fold('google') #=> "ggl"
 ```
 
 ```ruby
-require 'abb/ext'
+require 'abb/core_ext'
 
 
 'google'.abb  #=> "ggl"

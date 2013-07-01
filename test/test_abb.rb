@@ -1,6 +1,6 @@
 # coding: us-ascii
 
-require_relative 'test_helper'
+require_relative 'helper'
 
 class TestAbb < Test::Unit::TestCase
   

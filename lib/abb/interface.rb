@@ -1,6 +1,6 @@
 # coding: us-ascii
 
-require_relative 'singletonclass'
+require_relative 'singleton_class'
 
 module Abb
 
