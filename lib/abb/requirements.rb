@@ -1,3 +1,5 @@
+# coding: us-ascii
+
 require_relative 'version'
 require_relative 'constants'
 require_relative 'interface'

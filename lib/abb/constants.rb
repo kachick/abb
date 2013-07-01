@@ -1,3 +1,5 @@
+# coding: us-ascii
+
 module Abb
 
   VOWELS      = 'aeiuoAEIUO'.split('').map(&:freeze).freeze

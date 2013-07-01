@@ -1,3 +1,5 @@
+# coding: us-ascii
+
 lib_name = 'abb'.freeze 
 require "./lib/#{lib_name}/version"
 

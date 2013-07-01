@@ -1,3 +1,5 @@
+# coding: us-ascii
+
 module Abb
 
   VERSION = '0.0.1'.freeze
