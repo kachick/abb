@@ -1,6 +1,6 @@
 # coding: us-ascii
 
-lib_name = 'abb'.freeze 
+lib_name = 'abb'.freeze
 require "./lib/#{lib_name}/version"
 
 Gem::Specification.new do |gem|
@@ -16,9 +16,10 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 1.9.3'
 
-  gem.add_development_dependency 'yard', '>= 0.8.6.2', '< 0.9'
+  gem.add_development_dependency 'yard', '>= 0.8.7.6', '< 0.9'
   gem.add_development_dependency 'rake', '~> 10'
-  gem.add_development_dependency 'bundler', '>= 1.3.5', '< 2'
+  gem.add_development_dependency 'bundler', '>= 1.10', '< 2'
+  gem.add_development_dependency 'test-unit', '>= 3.1.1', '< 4'
 
   # common
 
