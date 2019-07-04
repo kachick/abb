@@ -40,7 +40,7 @@ require 'abb/core_ext'
 Requirements
 -------------
 
-* Ruby - [1.9.3 or later](http://travis-ci.org/#!/kachick/abb)
+* Ruby - [2.5 or later](http://travis-ci.org/#!/kachick/abb)
 
 Install
 -------

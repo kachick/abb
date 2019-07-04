@@ -14,8 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = lib_name.dup
   gem.version       = Abb::VERSION.dup
 
-  gem.required_ruby_version = '>= 1.9.3'
-
   gem.add_development_dependency 'yard', '>= 0.8.7.6', '< 0.9'
   gem.add_development_dependency 'rake', '~> 10'
   gem.add_development_dependency 'bundler', '>= 1.10', '< 2'
