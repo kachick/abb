@@ -11,7 +11,7 @@ module Abb
         Abb.__send__ converter, to_str
       end
     end
-  
+
   end
 
 end

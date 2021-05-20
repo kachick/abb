@@ -1,24 +1,24 @@
-abb
-====
+# abb
 
-[![Build Status](https://secure.travis-ci.org/kachick/abb.png)](http://travis-ci.org/kachick/abb)
+![Build Status](https://github.com/kachick/abb/actions/workflows/test_behaviors.yml/badge.svg?branch=main)
 [![Gem Version](https://badge.fury.io/rb/abb.png)](http://badge.fury.io/rb/abb)
 
-Description
------------
-
 Generate abbreviations from words
-
-Features
---------
 
 * initial word (acronym, initialism)
 * consonant, vowel
 
-Usage
------
+## Usage
 
-Basic API
+Require Ruby 2.6 or later
+
+Add below code into your Gemfile
+
+```ruby
+gem 'abb', '>= 0.2.0', '< 0.3.0'
+```
+
+### Overview
 
 ```ruby
 require 'abb'
@@ -26,41 +26,19 @@ require 'abb'
 Abb.fold('google') #=> "ggl"
 ```
 
-Extended
+Extending String
 
 ```ruby
-require 'abb/core_ext'
+module YourModuleOrClass
+  using Abb::Refinements
 
-
-'google'.abb  #=> "ggl"
-'Japan'.abb   #=> "Jpn"
-'American Standard Code for Information Interchange'.abb  #=> "ASCII"
+  'google'.abb  #=> "ggl"
+  'Japan'.abb   #=> "Jpn"
+  'American Standard Code for Information Interchange'.abb  #=> "ASCII"
+end
 ```
 
-Requirements
--------------
+## Links
 
-* Ruby - [2.5 or later](http://travis-ci.org/#!/kachick/abb)
-
-Install
--------
-
-```bash
-$ gem install abb
-```
-
-Link
-----
-
-* [Home](http://kachick.github.com/abb/)
-* [code](https://github.com/kachick/abb)
-* [API](http://kachick.github.com/abb/yard/frames.html)
-* [issues](https://github.com/kachick/abb/issues)
-* [CI](http://travis-ci.org/#!/kachick/abb)
-* [gem](https://rubygems.org/gems/abb)
-
-License
---------
-
-The MIT X11 License  
-See MIT-LICENSE for further details.
+* [Repository](https://github.com/kachick/abb)
+* [API documents](https://kachick.github.io/abb/)
