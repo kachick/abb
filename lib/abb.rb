@@ -1,10 +1,12 @@
 # coding: us-ascii
+# frozen_string_literal: true
+
 # abb - Generate abbreviations from words
 
 # Copyright (C) 2012 Kenichi Kamiya
 
 module Abb
-  VOWELS      = 'aeiuoAEIUO'.split('').map(&:freeze).freeze
+  VOWELS      = 'aeiuoAEIUO'.chars.map(&:freeze).freeze
   CONSONANTS  = ([*'b'..'z', *'B'..'Z'] - VOWELS).map(&:freeze).freeze
 end
 
