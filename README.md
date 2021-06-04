@@ -26,16 +26,20 @@ require 'abb'
 Abb.fold('google') #=> "ggl"
 ```
 
-Extending String
+Extending String without namespace pollution
 
 ```ruby
 module YourModuleOrClass
   using Abb::Refinements
 
-  'google'.abb  #=> "ggl"
-  'Japan'.abb   #=> "Jpn"
-  'American Standard Code for Information Interchange'.abb  #=> "ASCII"
+  def func
+    p 'google'.abb  #=> "ggl"
+    p 'Japan'.abb   #=> "Jpn"
+    p 'American Standard Code for Information Interchange'.abb  #=> "ASCII"
+  end
 end
+
+'google'.abb #=> NoMethodError
 ```
 
 ## Links

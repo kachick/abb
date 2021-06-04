@@ -16,6 +16,12 @@ class TestAbb < Test::Unit::TestCase
     assert_equal 'ggl', Abb.fold('google')
     assert_equal 'Jpn', Abb.fold('Japan')
     assert_equal 'ASCII', Abb.fold('American Standard Code for Information Interchange')
+    assert_equal '', Abb.fold('')
+    assert_equal '', Abb.fold(' a  b 42 ')
+
+    assert_raises(ArgumentError) do
+      Abb.fold(:google)
+    end
   end
 
   def test_refinements
