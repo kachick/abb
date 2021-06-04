@@ -5,9 +5,6 @@
 
 Generate abbreviations from words
 
-* initial word (acronym, initialism)
-* consonant, vowel
-
 ## Usage
 
 Require Ruby 2.6 or later
