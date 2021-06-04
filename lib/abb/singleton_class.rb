@@ -17,7 +17,7 @@ module Abb
       else
         str = str.dup
 
-        ''.tap { |ret|
+        (+'').tap { |ret|
           ret << str.slice!(0)
           ret << consonant(str)
         }
@@ -42,7 +42,7 @@ module Abb
     # @param str [String, #to_str]
     # @return [String]
     def initialism(str)
-      ''.tap { |ret|
+      (+'').tap { |ret|
         str.to_str.scan(/\b[A-Z]/) do |cap|
           ret << cap
         end
