@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h1 id="label-abb">abb</h1>
+
+<p><img src="https://github.com/kachick/abb/actions/workflows/test_behaviors.yml/badge.svg?branch=main"> <a href="http://badge.fury.io/rb/abb"><img src="https://badge.fury.io/rb/abb.png"></a></p>
+
+<p>Generate abbreviations from words</p>
+
+<h2 id="label-Usage">Usage</h2>
+
+<p>Require Ruby 2.6 or later</p>
+
+<p>Add below code into your Gemfile</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>abb</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>&gt;= 0.2.0</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>&lt; 0.3.0</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<h3 id="label-Overview">Overview</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>abb</span><span class='tstring_end'>&#39;</span></span>
+
+<span class='const'><span class='object_link'><a href="Abb.html" title="Abb (module)">Abb</a></span></span><span class='period'>.</span><span class='id identifier rubyid_fold'>fold</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>google</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='comment'>#=&gt; &quot;ggl&quot;
+</span></code></pre>
+
+<p>Extending String without namespace pollution</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>module</span> <span class='const'>YourModuleOrClass</span>
+  <span class='id identifier rubyid_using'>using</span> <span class='const'><span class='object_link'><a href="Abb.html" title="Abb (module)">Abb</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Abb/Refinements.html" title="Abb::Refinements (module)">Refinements</a></span></span>
+
+  <span class='kw'>def</span> <span class='id identifier rubyid_func'>func</span>
+    <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>google</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_abb'>abb</span>  <span class='comment'>#=&gt; &quot;ggl&quot;
+</span>    <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Japan</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_abb'>abb</span>   <span class='comment'>#=&gt; &quot;Jpn&quot;
+</span>    <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>American Standard Code for Information Interchange</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_abb'>abb</span>  <span class='comment'>#=&gt; &quot;ASCII&quot;
+</span>  <span class='kw'>end</span>
+<span class='kw'>end</span>
+
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>google</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_abb'>abb</span> <span class='comment'>#=&gt; NoMethodError
+</span></code></pre>
+
+<h2 id="label-Links">Links</h2>
+<ul><li>
+<p><a href="https://github.com/kachick/abb">Repository</a></p>
+</li><li>
+<p><a href="https://kachick.github.io/abb/">API documents</a></p>
+</li></ul>
+</div></div>
+
+      <div id="footer">
+  Generated on Fri Jun  4 06:48:40 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-3.0.1).
+</div>
+
+    </div>
+  </body>
+</html>
