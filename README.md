@@ -12,7 +12,7 @@ Require Ruby 3.1 or later
 Add below code into your Gemfile
 
 ```ruby
-gem 'abb', '>= 0.2.0', '< 0.3.0'
+gem 'abb', '~> 0.3.0'
 ```
 
 ### Overview
