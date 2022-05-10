@@ -4,7 +4,7 @@
 module Abb
   module Refinements
     refine String do
-      include Interface
+      import_methods Interface
     end
   end
 end
