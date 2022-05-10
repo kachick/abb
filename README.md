@@ -7,7 +7,7 @@ Generate abbreviations from words
 
 ## Usage
 
-Require Ruby 2.6 or later
+Require Ruby 3.1 or later
 
 Add below code into your Gemfile
 

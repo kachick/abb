@@ -3,10 +3,16 @@
 
 module Abb
   module Interface
-    Abb.public_methods(false).each do |converter|
-      define_method converter do
-        Abb.public_send(converter, to_str)
-      end
+    def abbreviation
+      Abb.abbreviation(to_str)
+    end
+
+    def abb
+      Abb.abb(to_str)
+    end
+
+    def fold
+      Abb.fold(to_str)
     end
   end
 end
