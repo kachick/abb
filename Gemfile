@@ -13,7 +13,6 @@ end
 
 group :development do
   gem 'yard', '~> 0.9.27', require: false
-  gem 'benchmark-ips', '~> 2.10.0', require: false
   gem 'rubocop', '~> 1.29.0', require: false
   gem 'rubocop-rake', '~> 0.6.0', require: false
   gem 'rubocop-performance', '~> 1.13.3', require: false
