@@ -1,7 +1,7 @@
 # abb
 
 ![Build Status](https://github.com/kachick/abb/actions/workflows/test_behaviors.yml/badge.svg?branch=main)
-[![Gem Version](https://badge.fury.io/rb/abb.png)](http://badge.fury.io/rb/abb)
+[![Gem Version](https://badge.fury.io/rb/abb.svg)](http://badge.fury.io/rb/abb)
 
 Generate abbreviations from words
 
