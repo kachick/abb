@@ -1,19 +1,16 @@
 # abb
 
+- _**This repository is archived**_
+- _**No longer maintained**_
+- _**All versions have been removed from <https://rubygems.org> to free up valuable namespace for other developers**_.
+
 ![Build Status](https://github.com/kachick/abb/actions/workflows/test_behaviors.yml/badge.svg?branch=main)
-[![Gem Version](https://badge.fury.io/rb/abb.svg)](http://badge.fury.io/rb/abb)
 
 Generate abbreviations from words
 
 ## Usage
 
 Require Ruby 3.1 or later
-
-Add below code into your Gemfile
-
-```ruby
-gem 'abb', '~> 0.3.0'
-```
 
 ### Overview
 
@@ -39,7 +36,3 @@ end
 'google'.abb #=> NoMethodError
 ```
 
-## Links
-
-* [Repository](https://github.com/kachick/abb)
-* [API documents](https://kachick.github.io/abb/)
